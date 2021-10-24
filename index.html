@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header class="title">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for stopping by , please consider filling out this form for us</p>
+    </header>
+
+    <div class="form-container">
+        <form id="survey-form">
+            <label for="name-label"><b>Name</b></label>
+            <input type="text" placeholder="Enter your Name" name="name" id="name-label" required>
+
+            <label for="email-label"><b>Email</b></label>
+            <input type="email" placeholder="Enter your Email" name="email" id="email-label" required>
+
+            <label for="age-label"><b>Age</b></label>
+            <input type="number" placeholder="Enter your Age" name="age" id="number-label" min="8" max="90" required>
+
+            <div class="form-group" id="roles">
+                <p><b>What type of a monke are you ?<b></p>
+                <select id="dropdown" name="role" class="form-control" placeholder="fdf" required>
+                    <option disabled selected value>Select your role</option>
+                    <option value="geek">Geeky Gorilla</option>
+                    <option value="overactive">Overactive Orangutan</option>
+                    <option value="chill">Chill Chimpanzee</option>
+                    <option value="badass">Badass Baboon</option>
+                    <option value="human">A Human ? Seriously ?</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p><b>Would you recommend our Inn to a fellow monke ?<b></p>
+
+                <label>
+                    <input type="radio" name="recommend" value="definitely" class="input-radio" checked>Yeehaaw! why not
+                </label><br>
+
+                <label>
+                    <input type="radio" name="recommend" value="maybe" class="input-radio" checked>Maybe ... just maybe
+                </label><br>
+
+                <label>
+                    <input type="radio" name="recommend" value="not-sure" class="input-radio" checked>Nah, not sure
+                </label><br>
+            </div>
+
+            <div class="form-group">
+                <p><b>The Stuff you loved in our Inn<b></p>
+                <select id="dropdown" name="features" class="form-control" required>
+                    <option disabled selected value>Thing you loved</option>
+                    <option value="bananas">Yummy Fresh Bananas</option>
+                    <option value="tress">Easy Tree Access</option>
+                    <option value="cost">Wallet friendly</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p><b>How can we improve our services ?<b></p>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="Add Swings" class="input-checkbox" checked>Add Swings
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="A Hot bath sounds fun" class="input-checkbox">A Hot
+                    bath sounds fun
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="More bananas" class="input-checkbox" checked>More
+                    Bananas
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="Jungle Music" class="input-checkbox">Some Jungle music
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="Tire swings" class="input-checkbox">Rooms equipped
+                    with tire swings
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="checkbox" value="Water park" class="input-checkbox">A Water park
+                </label><br>
+            </div>
+
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

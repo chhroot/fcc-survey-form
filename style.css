@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Consolas, Arial, Helvetica, sans-serif;
+  background: url("images/imag.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+#survey-form {
+  border-radius: 20px;
+  width: 50vw;
+  margin: 5px auto;
+  padding: 40px;
+  background-color: rgba(97, 163, 92, 0.5);
+  padding-right: 68px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.input-radio {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.form-control {
+  width: 104%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+}
+
+.submit-button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
